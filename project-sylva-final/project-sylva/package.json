@@ -1,0 +1,11 @@
+{
+  "name": "project-sylva",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A private birthday experience for Sylva",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "express": "^4.21.2",
+    "dotenv": "^16.4.7" }
+}

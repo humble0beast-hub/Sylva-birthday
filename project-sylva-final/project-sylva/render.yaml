@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: project-sylva
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SITE_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
